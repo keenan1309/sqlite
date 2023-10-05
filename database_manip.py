@@ -5,7 +5,7 @@ conn = sqlite3.connect('python_programming.db')
 #Execute the cursor
 conn_exc = conn.cursor()
 #Create the table
-conn_exc.execute('''CREATE TABLE python_programming(
+conn_exc.execute('''CREATE TABLE IF NOT EXISTS python_programming(
                      id int,
                      name text,
                      grade int
